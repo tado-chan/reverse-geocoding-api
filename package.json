@@ -1,0 +1,26 @@
+{
+  "name": "drizzle-mysql-point-test",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --env-file=.env src/index.ts",
+    "start": "tsx --env-file=.env src/index.ts",
+    "test:api": "tsx --env-file=.env src/test-geocode.ts",
+    "docker:up": "docker-compose up --build -d",
+    "docker:down": "docker-compose down",
+    "docker:test": "docker-compose up --build -d && sleep 5 && tsx --env-file=.env src/test-geocode.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.9",
+    "@hono/zod-validator": "^0.7.6",
+    "drizzle-orm": "^0.36.4",
+    "hono": "^4.11.7",
+    "mysql2": "^3.11.5",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
