@@ -3,3 +3,5 @@ dist
 .env
 .env.local
 .DS_Store
+map-app/.angular/cache
+map-app/node_modules
