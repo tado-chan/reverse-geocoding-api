@@ -1,0 +1,8 @@
+{
+  "name": "map-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "defaultBrowser": "google chrome"
+}
